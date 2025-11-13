@@ -1,0 +1,57 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 268 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.2.47:3000/
+9:13:59 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:5:32: ERROR: Expected "(" but found "!=="
+9:14:02 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:5:32: ERROR: Expected "(" but found "!=="
+  Plugin: vite:esbuild
+  File: /home/workspace/src/App.jsx:5:32
+  
+  Expected "(" but found "!=="
+  3  |  import { Upload, Loader2, Trash2, Database, Play, History, Moon, SunMedium, Download, Table as TableIcon, ChevronRight } from 'lucide-react'
+  4  |  
+  5  |  const BASE_URL = (typeof import !== 'undefined' && import.meta && import.meta.env && import.meta.env.VITE_BACKEND_URL) || 'http://localhost:8000'
+     |                                  ^
+  6  |  
+  7  |  function classNames(...classes) {
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+9:14:21 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:5:32: ERROR: Expected "(" but found "!=="
+  Plugin: vite:esbuild
+  File: /home/workspace/src/App.jsx:5:32
+  
+  Expected "(" but found "!=="
+  3  |  import { Upload, Loader2, Trash2, Database, Play, History, Moon, SunMedium, Download, Table as TableIcon, ChevronRight } from 'lucide-react'
+  4  |  
+  5  |  const BASE_URL = (typeof import !== 'undefined' && import.meta && import.meta.env && import.meta.env.VITE_BACKEND_URL) || 'http://localhost:8000'
+     |                                  ^
+  6  |  
+  7  |  function classNames(...classes) {
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
