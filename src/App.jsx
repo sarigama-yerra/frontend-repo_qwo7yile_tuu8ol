@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import Spline from '@splinetool/react-spline'
 import { Upload, Loader2, Trash2, Database, Play, History, Moon, SunMedium, Download, Table as TableIcon, ChevronRight } from 'lucide-react'
 
-const BASE_URL = (typeof import !== 'undefined' && import.meta && import.meta.env && import.meta.env.VITE_BACKEND_URL) || 'http://localhost:8000'
+const BASE_URL = (import.meta?.env?.VITE_BACKEND_URL) || 'http://localhost:8000'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -123,7 +123,7 @@ function FileUpload({ onUploaded, onTablesRefresh, toasts }) {
       if (xhr.status >= 200 && xhr.status < 300) {
         try {
           const res = JSON.parse(xhr.responseText)
-          toasts.add({ title: 'Upload complete', message: res?.table_name ? `${res.table_name} • ${res.row_count ?? '?'} rows` : 'File uploaded' })
+          toasts.add({ title: 'Upload complete', message: res?.table_name ? `${res.table_name} • ${res.row_count ?? '?' } rows` : 'File uploaded' })
           onUploaded?.(res)
           onTablesRefresh?.()
         } catch (e) {
